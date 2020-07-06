@@ -265,23 +265,19 @@ html, body, #app, .main-row, .cv {
     color: $blue;
     padding: 4px 12px 4px 12px;
     margin-left: 10px;
-    font-size: .75rem;
+    font-size: .75vh;
     font-weight: 700;
   }
 }
 
 .body-description{
-  font-size: .75rem;
+  font-size: .75vh;
   padding-left:12px;
   .description-text{
     
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
     line-height: 1.3125;
   }
-}
-
-.links-description{
-
 }
 .followed-by{
   padding-left: 12px;
@@ -315,3 +311,49 @@ html, body, #app, .main-row, .cv {
 .fade:not(.show) {
   display: none;
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    div, p, li, span{
+      font-size: 1.5rem !important;
+    }
+  }
+
+// @media (max-width: 575.98px) { 
+//   .col-xs-0{
+//     display: none !important;
+//     width:0% !important;
+//   }
+// }
+
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) and (max-width: 767.98px) { 
+//   .col-sm-0{
+//     display: none !important;
+//     width:0% !important;
+//   }
+// }
+
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) and (max-width: 991.98px) { 
+//   .col-md-0{
+//     display: none !important;
+//     width:0% !important;
+//   }
+// }
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) and (max-width: 1199.98px) { 
+//   .col-lg-0{
+//     display: none !important;
+//     width:0% !important;
+//   }
+//  }
+
+// // Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { 
+//   .col-xl-0{
+//     width: 0;
+//   }
+// }
