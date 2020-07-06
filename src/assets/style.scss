@@ -1,0 +1,211 @@
+$blue: #4285f4;
+$red: #db4437;
+$yellow: #f4b400;
+$green: #0f9d58;
+$black: #333333;
+$light-grey: #dfe1e5; 
+$grey: #f2f2f2;
+$dark-grey: #e4e4e4;
+
+.center-content{
+  padding-top: 70px;
+  display: block;
+  align-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+.search-bar{
+  width:70%;
+  position: relative;
+  border: solid 1px $light-grey;
+  border-radius: 25px;
+  padding: 7px 40px 7px 40px;
+  background: url('../assets/search.svg') no-repeat scroll 17px , url('../assets/microphone.svg') 95% no-repeat;
+  background-size: 20px 20px, 20px 20px;
+  outline: none; 
+  &:hover{
+    box-shadow: 0px 0px 5px $dark-grey;
+    border: solid 1px transparent;
+  }
+}
+
+.buttons{
+  margin: 20px 0;
+  .button{
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    &:hover{
+      background-image: -webkit-linear-gradient(top,#f5f5f5,#f8f8f8);
+      border: 1px solid #9AA0A6;
+      color: $black;
+    }
+  }
+}
+
+.top-nav{
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  li:first-child{
+    margin-left: auto;
+  }
+  .nav-item-text{
+    padding-top: 8px;
+    .nav-link{
+      color: rgba(0,0,0,0.87);
+      text-decoration: none;
+      font-size: 13px;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  .head-me{
+    border-radius: 100px;
+    width:40px;
+    height:40px;
+  }
+  .weird-square {
+    background-image: url('https://ssl.gstatic.com/gb/images/i2_2ec824b0.png');
+    background-size: 528px 68px;
+    background-position: -132px -38px;
+    margin-top: 10px;
+    width:25px;
+    height:25px;
+    opacity: .55;
+    &:hover{
+      opacity: 1;
+    }
+  }
+}
+
+.title{
+  margin: 40px 0;
+  font-weight: 1200;
+  font-size: 4rem;
+}
+.google-like-title {
+  span:nth-child(1) {
+    color: $blue;
+  }
+  span:nth-child(2) {
+    color: $red;
+  }
+  span:nth-child(3) {
+  color: $yellow;
+  }
+  span:nth-child(4) {
+    color: $blue;
+  }
+  span:nth-child(5) {
+    color: $green;
+  }
+  span:nth-child(6) {
+    color: $red;
+  }
+  span:nth-child(7) {
+    color: $yellow;
+  }
+  span:nth-child(8) {
+    color: $blue;
+  }
+  span:nth-child(9) {
+    color: $green;
+  }
+}
+
+.bottom-bar {
+  background-color: $grey;
+  border-top: solid 1px $dark-grey;
+  a {
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+  }
+  
+}
+
+.image-me{
+  width: 100%;
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+  .center-content{
+    padding-top: 150px; 
+  }
+  .button, .nav-link {
+    font-size: 3vw !important;
+  }
+
+  .small {
+    font-size: 2vw !important;
+  }
+
+  .nav-item-text:first-child{
+    margin-left:0 !important;
+  }
+
+  .nav-item:nth-child(3){
+    margin-left: auto !important;
+  }
+  
+  #app{
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .search-bar, .top-nav, {
+    width:100%;
+  }
+
+  .title{
+    margin: 20px 0;
+    font-weight: 1200;
+    font-size: 8rem;
+  }
+
+  .search-bar {
+    font-size: 3rem;
+    margin: 40px 18px 0 18px;
+    border-radius: 50px;
+    padding: 20px 40px 13px 40px;
+    background: url('../assets/search.svg') 98% no-repeat, url('../assets/microphone.svg') 90% no-repeat;
+    background-size: 70px 70px, 70px 70px;
+  }
+
+  .buttons .button{
+    font-size: 20px;
+    margin: 11px 4px;
+    padding: 12px 35px;
+    line-height: 40px;
+    height: 70px;
+    min-width: 80px;
+    user-select: none;
+  }
+  .top-nav .weird-square{
+    display: none;
+  }
+  .head-me{
+    width:100px !important;
+    height:100px !important;
+  }
+}

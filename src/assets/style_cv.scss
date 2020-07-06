@@ -1,0 +1,317 @@
+$grey: #e6ecf0;
+$blue-grey: #f5f8fa;
+$grey-text: #9ba7b1;
+$dark-grey-text: #738391;
+$blue: #1da1f2;
+$darker-blue: #1787cc;
+$light-blue: #32a7f01c;
+
+.grey-text{
+  color: $grey-text;
+}
+.side-img{
+  height: 40px;
+  width: 40px;
+}
+.hashtag{
+  color: $blue;
+  cursor: pointer;  
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+body, html{
+  font-family: Roboto, Ubuntu, "Helvetica Neue", sans-serif !important;
+  overflow:hidden;
+}
+
+.arrow-back{
+  padding:0;
+  margin: .5rem 1rem;
+}
+
+.valide{
+  width:18px;
+  height: 18px;
+}
+
+.hover-light{
+  border-radius: 25px;
+  &:hover{
+    color: $blue !important;
+    background-color: $light-blue;
+  }
+  &.active{
+    color: $blue !important;
+  }
+}
+
+.top-left-column{
+  height: 92%;
+  .flex-column{
+    padding-left: 10px;
+  }
+  .nav-link{
+    padding: 10px 15px 10px 15px;
+    font-weight: 600;
+    color: black;
+    margin: 8px auto 8px 0;
+  }
+  .nav-link-contact{
+    background-color: $blue;
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px 15px 10px 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: white;
+    width: 100%;
+    margin: 8px 0 8px 0;
+    &:hover{ 
+      background-color: $darker-blue;
+      text-decoration: none;
+    }
+  }
+}
+
+.nb-exp {
+  color: $grey-text;
+  font-size: 0.7rem;
+}
+
+.bottom-left-column{
+  height: 8%;
+}
+.middle-column{
+  padding: 0;
+  height: 100vh;
+  .row{
+    margin: 0;
+    border: solid 1px $grey;
+  }
+  .feed-middle-column{
+    height: 100vh;
+    overflow-y: scroll;
+    ul{     
+      padding: 0;
+      padding-bottom: 40px;
+    }
+      ul li {
+      padding: 6px 10px 10px 10px;
+      border-bottom: solid 1px $grey;
+      .head-me{
+          border-radius: 100px;
+          width:40px;
+          height:40px;
+      }
+      .company-name, .city, .period{
+         display: inline-block;
+      }
+      .position, .city, .period {
+        color: $grey-text;
+      }
+
+      .position, .company-name, .description {
+        padding-left: 50px;
+      }
+
+      .position{
+        font-size: 0.6rem;
+        margin-top: -40px;
+      }
+      .company-name{
+        font-weight:800;
+      }
+      .city{
+        font-size: 0.7rem;
+      }
+      .period{
+        font-size: 0.8rem;  
+      }
+      .description {
+        font-size: 0.7rem;
+      }
+      .button-line img{
+          width: 20px;
+          height: 20px;
+          margin-left: 13%;
+      }
+    }
+  }
+}
+
+
+.right-column{
+  overflow-y: scroll;
+  height: 100%;
+  .row{
+    margin:15px 20px 15px 10px;
+  }
+  .search-right-column{
+    .search-bar{
+      font-size: 1rem;
+      margin: 0 ;
+      border-radius: 20px;
+      width: 100%;
+      height: 40px;
+      background: url('../assets/search.svg') no-repeat scroll 10px, $grey;
+      background-size: 20px 20px;
+      text-indent: 30px;
+      border: solid 1px $grey;
+      outline: none;   
+    }
+  }
+  .top-right-column{
+    background: $blue-grey;
+    height: fit-content;
+    border-radius: 20px;
+  }
+  .header, .footer, .body li {
+    width: 100%;
+    padding-left: 12px; 
+  }
+   
+  .header{
+    font-weight: 600;
+    font-size: 15px;
+    text-align: left;
+    line-height: 40px;
+    height: 40px;
+  } 
+  .body{
+    padding-left: 0;
+    margin-bottom: 0;
+    width: 100%;
+    li{
+      border-top: solid 1px $grey;
+      border-bottom: solid 1px $grey;
+      list-style: none;
+      line-height: 45px;
+    }
+    
+  }
+  .footer{
+    line-height: 40px;
+    height: 40px;
+  }
+}
+
+.trending li{
+  font-size: 0.75rem;
+  color: $grey-text;
+  line-height: 30px !important;
+  .trending-descrption{
+    font-weight: 800;
+    color: black;
+  }
+}
+
+.bottom-right-column{
+  background: $blue-grey;
+  height: fit-content;  
+  border-radius: 25px;
+}
+
+html, body, #app, .main-row, .cv {
+  height: 100%;
+}
+.cv{
+  position: absolute;
+}
+
+.head-description{
+  width: 100%;
+  height:130px;
+  background-image: url('https://i.imgur.com/LNdbMaJ.jpg');
+  background-size: 100% 230px;
+}
+
+
+.blue-outline{
+  border: 1px solid $blue;
+  border-radius: 25px;
+  cursor: pointer;
+  &:hover{
+    background-color: $light-blue;
+  }
+}
+
+.follow-line-description{
+  margin: 20px 30px 20px 0;
+  right: 0;
+  .face-description {
+    display: inline-block;
+    margin: -50px 0 0 10px;
+    border-radius: 100%;
+    width:100px;
+    height:100px;
+    border: 4px solid #f2f2f2;
+  }
+  .three-dots{
+    float: right;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    .dot{
+      width: 4px;
+      height: 4px;
+      display: inline-block;
+      margin-bottom:2px;
+    }
+  }
+  .follow{
+    float: right;
+    color: $blue;
+    padding: 4px 12px 4px 12px;
+    margin-left: 10px;
+    font-size: .75rem;
+    font-weight: 700;
+  }
+}
+
+.body-description{
+  font-size: .75rem;
+  padding-left:12px;
+  .description-text{
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    line-height: 1.3125;
+  }
+}
+
+.links-description{
+
+}
+.followed-by{
+  padding-left: 12px;
+}
+.followed-by-text{
+  font-size: 0.65rem;
+  color: $dark-grey-text;
+}
+.followed-by-heads{
+  height: 18px;
+  width:33px;
+}
+
+.nav-scroll{
+  li{
+    padding:0 !important;
+  }
+  .nav-link{
+    line-height: 40px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: $blue;
+  }
+  .active{
+    border-bottom: 2px solid $blue;
+  }
+}
+
+
+
+.fade:not(.show) {
+  display: none;
+}
