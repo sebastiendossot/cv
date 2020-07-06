@@ -21,7 +21,7 @@
         </div>
       </div>
       <div class="middle-column col-12 col-lg-6 col-xl-5">
-        <div class="d-sm-none small-search row">
+        <div class="d-md-none small-search row">
           <img src="../assets/head-bald.png" class="side-img"> </img>
           <input type="text" class="search-bar" placeholder= "Seb's Search"></input>
         </div>

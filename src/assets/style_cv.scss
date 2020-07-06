@@ -330,16 +330,16 @@ html, body, #app, .main-row, .cv {
     div, p, li, span{
       font-size: 1.5rem !important;
     }
-    .position{
-      margin-top: -100px !important;
-    }
-    .position, .company-name, .description{
-      padding-left: 110px  !important;
-    }
-    // .head-me{
-    //   width: 50px !important;
-    //   height: 50px !important;
+    // .position{
+    //   margin-top: -100px !important;
     // }
+    .position, .company-name, .description{
+      padding-left: 100px  !important;
+    }
+    .head-me{
+      width: 100px !important;
+      height: 100px !important;
+    }
   }
 
 // @media (max-width: 575.98px) { 
