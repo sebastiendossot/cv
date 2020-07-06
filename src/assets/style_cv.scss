@@ -330,9 +330,9 @@ html, body, #app, .main-row, .cv {
     div, p, li, span{
       font-size: 1.5rem !important;
     }
-    // .position{
-    //   margin-top: -100px !important;
-    // }
+    .position{
+      margin-top: -100px !important;
+    }
     .position, .company-name, .description{
       padding-left: 100px  !important;
     }
@@ -341,41 +341,3 @@ html, body, #app, .main-row, .cv {
       height: 100px !important;
     }
   }
-
-// @media (max-width: 575.98px) { 
-//   .col-xs-0{
-//     display: none !important;
-//     width:0% !important;
-//   }
-// }
-
-// // Small devices (landscape phones, 576px and up)
-// @media (min-width: 576px) and (max-width: 767.98px) { 
-//   .col-sm-0{
-//     display: none !important;
-//     width:0% !important;
-//   }
-// }
-
-// // Medium devices (tablets, 768px and up)
-// @media (min-width: 768px) and (max-width: 991.98px) { 
-//   .col-md-0{
-//     display: none !important;
-//     width:0% !important;
-//   }
-// }
-
-// // Large devices (desktops, 992px and up)
-// @media (min-width: 992px) and (max-width: 1199.98px) { 
-//   .col-lg-0{
-//     display: none !important;
-//     width:0% !important;
-//   }
-//  }
-
-// // Extra large devices (large desktops, 1200px and up)
-// @media (min-width: 1200px) { 
-//   .col-xl-0{
-//     width: 0;
-//   }
-// }
