@@ -39,17 +39,12 @@
 <script>
   export default {
     name: 'Home',
-    data () {
-      return {
-        photo: ''
-      };
-    },
     methods: {
-    returnPhoto: function (event) {
-      let photoArray = ["https://i.imgur.com/PCn1pg8.png", "https://i.imgur.com/437rtM7.png", "https://i.imgur.com/7kNWnKK.png", "https://i.imgur.com/91TBfSo.jpg"];
-      const randNum = Math.floor(Math.random() * 4);
-      this.photo = photoArray[randNum];
-    }
+      returnPhoto: function (event) {
+        const photoArray = ["https://i.imgur.com/PCn1pg8.png", "https://i.imgur.com/437rtM7.png", "https://i.imgur.com/7kNWnKK.png", "https://i.imgur.com/91TBfSo.jpg"];
+        const randNum = Math.floor(Math.random() * 4);
+        this.photo = photoArray[randNum];
+      }
   }
   };
 </script>
