@@ -20,7 +20,11 @@
           <img src="../assets/indiana.jpg"  style="width:40px;height:40px;border-radius: 25px;display: inline-block"> </img><span style="padding-left: 4px; font-weight:700;font-size:0.8rem; line-height:40px; display: inline-block"> Sébastien DOSSOT</span>
         </div>
       </div>
-      <div class="middle-column col-8 col-lg-6 col-xl-5">
+      <div class="middle-column col-12 col-lg-6 col-xl-5">
+        <div class="d-sm-none small-search row">
+          <img src="../assets/head-bald.png" class="side-img"> </img>
+          <input type="text" class="search-bar" placeholder= "Seb's Search"></input>
+        </div>
         <div class="top-middle-column row">
           <div class="col-2">
             <router-link class="nav-link hover-light arrow-back" to="/">&nbsp;←</router-link>
@@ -141,7 +145,7 @@
             </ul>
         </div>
       </div>
-      <div class="right-column col-4 col-lg-3 col-xl-3">
+      <div class="right-column col-12 col-lg-4 col-xl-3">
         <div class="search-right-column row">   
           <input type="text" class="search-bar" placeholder= "Seb's Search"></input>
         </div>
