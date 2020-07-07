@@ -39,6 +39,11 @@
 <script>
   export default {
     name: 'Home',
+    data: function () {
+      return {
+        photo: ''
+      }
+    },
     methods: {
       returnPhoto: function (event) {
         const photoArray = ["https://i.imgur.com/PCn1pg8.png", "https://i.imgur.com/437rtM7.png", "https://i.imgur.com/7kNWnKK.png", "https://i.imgur.com/91TBfSo.jpg"];

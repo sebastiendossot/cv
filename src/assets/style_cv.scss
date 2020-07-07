@@ -142,7 +142,7 @@ body, html{
 }
 .small-search{
   text-align: center;
-  .search-bar{
+  .search-bar-top{
     font-size: 1rem;
     margin: 5px auto 5px auto;
     border-radius: 20px;
@@ -156,7 +156,7 @@ body, html{
   }
 }
 
-.search-bar{
+.search-bar-cv{
   font-size: 1rem;
   margin: 0 ;
   border-radius: 20px;
@@ -277,7 +277,7 @@ html, body, #app, .main-row, .cv {
     color: $blue;
     padding: 4px 12px 4px 12px;
     margin-left: 10px;
-    font-size: .75vh;
+    font-size: .75rem;
     font-weight: 700;
   }
 }
@@ -337,8 +337,8 @@ html, body, #app, .main-row, .cv {
       padding-left: 100px  !important;
     }
     .head-me{
-      width: 100px !important;
-      height: 100px !important;
+      width: 80px !important;
+      height: 80px !important;
     }
     .nav-scroll .nav-link{
       font-size: 1.5rem;

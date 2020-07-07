@@ -21,9 +21,9 @@
         </div>
       </div>
       <div class="middle-column col-12 col-lg-6 col-xl-5">
-        <div class="d-md-none small-search row">
+        <div class="d-sm-block d-xs-block d-lg-none small-search row">
           <img src="../assets/head-bald.png" class="side-img"> </img>
-          <input type="text" class="search-bar" placeholder= "Seb's Search"></input>
+          <input type="text" class="search-bar-top" placeholder= "Seb's Search"></input>
         </div>
         <div class="top-middle-column row">
           <div class="col-2">
@@ -150,7 +150,7 @@
       </div>
       <div class="right-column col-12 col-lg-4 col-xl-3">
         <div class="search-right-column row">   
-          <input type="text" class="search-bar" placeholder= "Seb's Search"></input>
+          <input type="text" class="search-bar-cv" placeholder= "Seb's Search"></input>
         </div>
         <div class="top-right-column row">
           <div class="header">Sébastien might like</div>
