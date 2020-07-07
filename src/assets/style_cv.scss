@@ -331,7 +331,7 @@ html, body, #app, .main-row, .cv {
       font-size: 1.5rem !important;
     }
     .position{
-      margin-top: -100px !important;
+      margin-top: -80px !important;
     }
     .position, .company-name, .description{
       padding-left: 100px  !important;
@@ -342,5 +342,12 @@ html, body, #app, .main-row, .cv {
     }
     .nav-scroll .nav-link{
       font-size: 1.5rem;
+    }
+    .head-description{
+      background-size: 100% 450px;
+    }
+    .face-description{
+      width: 150px !important;
+      height: 150px !important;
     }
   }

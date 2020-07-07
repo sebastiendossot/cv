@@ -139,7 +139,7 @@
                   <a class="hashtag" :href="item.link" style="margin-bottom:12px;" target="_blank">Site: {{item.link}}</a>
                   <br/>
                   <br/>
-                  <a class="hashtag" :href="item.link" style="margin-bottom:12px;" target="_blank">Github: {{item.github}}</a>
+                  <a class="hashtag" v-bind:href="item.github" style="margin-bottom:12px;" target="_blank">Github: {{item.github}}</a>
                 </div>
                 <div class="button-line">
                   <img v-for="logo in item.logos" v-bind:src="'' + logo +''"></img>
@@ -223,7 +223,7 @@
          projets: [
           {period:"Work in progress disponible sur github", position:"React / Django / Docker / nginx", company_name:"Remember", description: "(Work in progress) Site d'apprentissage. Le principe est de créer ses propres 'jeux de cartes' avec une association recto / verso à se rappeler. On peut ensuite 'jouer' le jeu, qui se réorganise en fonction des bonnes et mauvaises réponses afin d'aider à la mémorisation. ", link: "http://remember.sebastiendossot.fr/", github: "https://github.com/sebastiendossot/deck-creator", logos: ["https://i.imgur.com/oGMkeOL.png", "https://i.imgur.com/fLlHi3i.png", "https://i.imgur.com/1GypYee.png", "https://i.imgur.com/6pDp1jf.png", "https://i.imgur.com/02129ND.png"]},
           {period:"Work in progress disponible sur github", position:"Vuejs / Django / Docker", company_name:"Kanban", description: "(Work in progress) Site Kanban avec drag and drop, le FrontEnd en Vuejs et le BackEnd en Django se trouvent dans des containers différents et pour l'instant une erreur survient dans ce processus.", link: "http://kanban.sebastiendossot.fr/", github: "https://github.com/sebastiendossot/kanban-vuejs-docker-django", logos: [ "https://i.imgur.com/GcA9yg1.png", "https://i.imgur.com/fLlHi3i.png", "https://i.imgur.com/1GypYee.png", "https://i.imgur.com/6pDp1jf.png", "https://i.imgur.com/02129ND.png"]},
-          {period:"Ce site", position:"Vuejs", company_name:"Portfolio", description: "Site portfolio avec une page home imitant google et une page principale imitant twitter", link: "http://sebastiendossot.fr/", github: "https://github.com/sebastiendossot/cv", logos: ["https://i.imgur.com/GcA9yg1.png", "https://i.imgur.com/Sfr1XbY.png", "https://i.imgur.com/vyVstvn.png", "https://i.imgur.com/1GypYee.png", "https://i.imgur.com/QF4DjVC.png"]},
+          {period:"Ce site", position:"Vuejs", company_name:"Portfolio", description: "Site portfolio avec une page home imitant google et une page principale imitant twitter", link: "http://sebastiendossot.fr/", github: "https://github.com/sebastiendossot/cv/", logos: ["https://i.imgur.com/GcA9yg1.png", "https://i.imgur.com/Sfr1XbY.png", "https://i.imgur.com/vyVstvn.png", "https://i.imgur.com/1GypYee.png", "https://i.imgur.com/QF4DjVC.png"]},
           {period:"Disponible sur github", position:"vanilla js / canvas / pipes", company_name:"Pong-guns", description: "Le vieux jeu pong, jouable à plusieurs fait en JavaScript mais avec des guns pour détruire l'adversaire. (Pas en marche en ce moment, code et screenshots disponibles sur demande)", link: "https://i.imgur.com/irkmTfi.png", github: "https://github.com/sebastiendossot/PongGuns", logos: ["https://i.imgur.com/2t9HxpU.png", "https://i.imgur.com/JqkT7xn.png", "https://i.imgur.com/QF4DjVC.png", "https://i.imgur.com/JqkT7xn.png", "https://i.imgur.com/QF4DjVC.png"]},
         ]  
       };
