@@ -152,7 +152,7 @@ $dark-grey: #e4e4e4;
     padding-top: 150px; 
   }
   .button, .nav-link {
-    font-size: 3vw !important;
+    font-size: 4vw !important;
   }
 
   .small {
@@ -208,4 +208,37 @@ $dark-grey: #e4e4e4;
     width:100px !important;
     height:100px !important;
   }
+
+  .navbar-brand{
+    font-size:4vw !important;
+  }
+  .liens{
+    color: #757575 !important;
+    display: block;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    flex: 0 0 auto;
+    font-size: 12px;
+    font-weight: 600 !important;
+    line-height: 90px !important;
+    margin-right: 8px;
+    padding: 0 8px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .lien-portfolio{
+    
+  }
+  
+  .lien-all{
+    display: block  !important;
+    color: #4285f4  !important;
+    border-bottom: 8px solid #4285f4  !important;
+  }
+ 
+}
+
+.lien-all{
+  display: none;
 }

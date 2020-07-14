@@ -1,9 +1,10 @@
 <template>
   <div class="home">
     <ul class="nav nav-pills top-nav">
-      <li class="nav-item nav-item-text"><router-link class="nav-link" to="/cv">CV</router-link></li>
+      <li class="nav-item nav-item-text"><router-link class="nav-link liens lien-all" style="margin-left:30px" to="/">ALL</router-link></li>
+      <li class="nav-item nav-item-text"><router-link class="nav-link liens lien-portfolio" to="/cv">Portfolio</router-link></li>
       <li class="nav-item nav-item-img"><a class="nav-link weird-square" href="#"></a></li>
-      <li class="nav-item nav-item-img"><a class="nav-link" href="#"><img src="../assets/me.jpg" class="head-me"></img></a></li>
+      <li class="nav-item nav-item-img"><a class="nav-link" href="#"><img src="../assets/me.jpg" class="head-me" alt="Image de moi imitant le theme de google"/></a></li>
     </ul>
     <div class="center-content">
       <h1 class="title">
@@ -22,13 +23,13 @@
       <div class="small">Full-Stack Developer / DevOps - 4 ans d'expérience</div>
     </div>
     <nav class="navbar navbar-light fixed-bottom bottom-bar">
-      <a class="navbar-brand" href="https://www.linkedin.com/in/sebastien-dossot/" target="_blank"></i>LinkedIn</a>
+      <a class="navbar-brand" href="https://www.linkedin.com/in/sebastien-dossot/" target="_blank">LinkedIn</a>
     </nav>
     <div class="modal fade" id="luckyModal" tabindex="-1" role="dialog" aria-labelledby="luckyModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-body">
-          <img :src="this.photo" class="image-me"></img>
+          <img :src="this.photo" class="image-me" alt="Image aleatoire de mes passions" />
         </div>
       </div>
     </div>

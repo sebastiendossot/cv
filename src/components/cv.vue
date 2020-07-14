@@ -7,9 +7,9 @@
       <div class="left-column col-lg-2 d-none d-lg-block">
         <div class="top-left-column row">
           <nav class="nav flex-column">
-            <img src="../assets/head-bald.png" class="side-img"> </img>            
+            <img src="../assets/head-bald.png" class="side-img" alt="Jolie icône me représentant"/>            
             <router-link class="nav-link hover-light" to="/">Home</router-link>
-            <router-link class="nav-link hover-light" to="/cv">CV</router-link>
+            <router-link class="nav-link hover-light" to="/cv">Portfolio</router-link>
             <a class="nav-link hover-light active" data-toggle="tab" href="#experiences" role="tab" aria-controls="experiences" aria-selected="true">Expériences</a>
             <a class="nav-link hover-light" data-toggle="tab" href="#formations" role="tab" aria-controls="formations" aria-selected="false">Diplômes</a>
             <a class="nav-link hover-light" data-toggle="tab" href="#projets" role="tab" aria-controls="projets" aria-selected="false">Projets</a>
@@ -17,12 +17,12 @@
           </nav>
         </div>
         <div class="bottom-left-column row">
-          <img src="../assets/indiana.jpg"  style="width:40px;height:40px;border-radius: 25px;display: inline-block"> </img><span style="padding-left: 4px; font-weight:700;font-size:0.8rem; line-height:40px; display: inline-block"> Sébastien DOSSOT</span>
+          <img src="../assets/indiana.jpg" style="width:40px;height:40px;border-radius: 25px;display: inline-block" alt="Moi en Indiana Jones" /><span style="padding-left: 4px; font-weight:700;font-size:0.8rem; line-height:40px; display: inline-block"> Sébastien DOSSOT</span>
         </div>
       </div>
       <div class="middle-column col-12 col-lg-6 col-xl-5">
         <div class="d-sm-block d-xs-block d-lg-none small-search row">
-          <img src="../assets/head-bald.png" class="side-img"> </img>
+          <img src="../assets/head-bald.png" class="side-img" alt="Jolie icône me représentant" />
           <input type="text" class="search-bar-top" placeholder= "Seb's Search"></input>
         </div>
         <div class="top-middle-column row">
@@ -40,7 +40,7 @@
               <div class="head-description">
               </div>
               <div class="follow-line-description">
-                <img src="../assets/indiana.jpg"  class="face-description"> </img>
+                <img src="../assets/indiana.jpg"  class="face-description" alt="Moi en Indiana Jones" />
                 
                 <div class="follow blue-outline" data-toggle="modal" data-target="#exampleModal">
                   Follow
@@ -67,7 +67,7 @@
                 </div>
               </div>
               <div class="body-description">
-                <div style="font-size: 1.15rem;font-weight: 800">Sébastien DOSSOT  <img src="../assets/valide.png"  class="valide"></img></div>
+                <div style="font-size: 1.15rem;font-weight: 800">Sébastien DOSSOT  <img src="../assets/valide.png"  class="valide" alt="Valide"/></div>
                 <div class="description-text"> 
                   Ingénieur informatique touche-à-tout, passionné et animé d'une grande soif d'apprendre, fort de quatre
                   ans d'expérience en entreprise dont trois à l'étranger (Irlande, Nouvelle Zélande). <br/> <br/> 
@@ -76,15 +76,15 @@
               </div>
               <br/>
               <div class="grey-text"> 
-                    <img src="../assets/map-point.png"  class="valide"> Bordeaux, France
-                    <img src="../assets/link.png"  class="valide"> <span class="hashtag">sebastien.dossot@gmail.com</span>
-                    <img src="../assets/calendar.png"  class="valide"> Joined life in 1990
+                    <img src="../assets/map-point.png"  class="valide" alt="Ville" /> Bordeaux, France
+                    <img src="../assets/link.png"  class="valide" alt="Email" /> <span class="hashtag">sebastien.dossot@gmail.com</span>
+                    <img src="../assets/calendar.png"  class="valide" alt="Calendrier" /> Joined life in 1990
               </div>
               </div>
               <div class="links-description">
               </div>
               <div class="followed-by">
-                <img src="../assets/heads.png" class="followed-by-heads"></img>
+                <img src="../assets/heads.png" class="followed-by-heads" alt="petites tetes des gens qui follow" />
                 <span class="followed-by-text">Followed by Bored Elon Musk, Jeff Bezos, and 2 others you follow</span>
               </div>
               <ul class="nav nav-fill nav-scroll" style="padding:0">
@@ -101,38 +101,38 @@
             </li>
             </ul>
             <ul class="tab-pane fade show active" id="experiences" role="tabpanel" aria-labelledby="experiences-tab">
-              <li v-for="item in experiences">
-                <img :src="item.image" class="head-me"></img>
-                <div class="position"><img src="../assets/retweet.png" style="width:10px;height:10px;"></img> &nbsp;&nbsp; {{ item.position }}</div>
+              <li v-for="item in experiences" v-bind:key="item.company_name">
+                <img :src="item.image" class="head-me" alt="Icône entrerpise"/>
+                <div class="position"><img src="../assets/retweet.png" style="width:10px;height:10px;" alt="Retweet"/> &nbsp;&nbsp; {{ item.position }}</div>
                 <div class="company-name">{{ item.company_name }}</div> <div class="city small">{{ item.city }} •</div> <div class="period">{{ item.period }} • {{ item.length }}</div>
                 <div class="description">
                   <p v-for="description in item.description">{{description}}</p>
                 </div>
                 <div class="button-line">
-                  <img v-for="logo in item.logos" v-bind:src="'' + logo +''"></img>
+                  <img v-for="logo in item.logos" v-bind:src="'' + logo +''" v-bind:key="logo" alt="Décrit les compétences"/>
                 </div>
               </li>
             </ul>
             <ul id="formations" class="tab-pane fade" role="tabpanel" aria-labelledby="formations-tab">
-              <li v-for="item in formations">
-                <img :src="item.image" class="head-me"></img>
-                <div class="position"><img src="../assets/retweet.png" style="width:10px;height:10px;"></img> &nbsp;&nbsp; {{ item.company_name }}</div>
+              <li v-for="item in formations" v-bind:key="item.company_name">
+                <img :src="item.image" class="head-me" alt="Fac"/>
+                <div class="position"><img src="../assets/retweet.png" style="width:10px;height:10px;"/> &nbsp;&nbsp; {{ item.company_name }}</div>
                 <div class="company-name">{{ item.position }} <span class="city small">{{ item.city }} •</span> <span class="period small">{{ item.period }} </span></div>
                 <div class="description">
                   <p>{{item.description}}</p>
                 </div>
                 <div class="button-line">
-                  <img src="../assets/retweet.png"></img>
-                  <img src="../assets/heart.png"></img>
-                  <img src="../assets/upload.png"></img>
-                  <img src="../assets/stats.png"></img>
+                  <img src="../assets/retweet.png" alt="Retweet"/>
+                  <img src="../assets/heart.png" alt="Heart"/>
+                  <img src="../assets/upload.png" alt="Upload"/>
+                  <img src="../assets/stats.png" alt="Stats"/>
                 </div>
               </li>
             </ul>
             <ul id="projets" class="tab-pane fade" role="tabpanel" aria-labelledby="projets-tab">
-              <li v-for="item in projets">
-                <img :src="item.image" class="head-me"></img>
-                <div class="position"><img src="../assets/retweet.png" style="width:10px;height:10px;"></img> &nbsp;&nbsp; {{ item.position }}</div>
+              <li v-for="item in projets" v-bind:key="item.company_name">
+                <img :src="item.image" class="head-me" alt=" "/>
+                <div class="position"><img src="../assets/retweet.png" style="width:10px;height:10px;" alt="Retweet"/> &nbsp;&nbsp; {{ item.position }}</div>
                 <div class="company-name">{{ item.company_name }} <span class="city small">{{ item.city }} •</span> <span class="period small">{{ item.period }} </span></div>
                 <div class="description">
                   <p>{{item.description}}</p>
@@ -142,7 +142,7 @@
                   <a class="hashtag" v-bind:href="item.github" style="margin-bottom:12px;" target="_blank">Github: {{item.github}}</a>
                 </div>
                 <div class="button-line">
-                  <img v-for="logo in item.logos" v-bind:src="'' + logo +''"></img>
+                  <img v-for="logo in item.logos" v-bind:src="'' + logo +''" v-bind:key="logo" alt="Décrit les compétences"/>
                 </div>
               </li>
             </ul>
@@ -156,16 +156,16 @@
           <div class="header">Sébastien might like</div>
           <ul class="body">
             <li>
-              Plongée (Polynésie, NZ...) <img src="../assets/valide.png"  class="valide"></img>
+              Plongée (Polynésie, NZ...) <img src="../assets/valide.png" class="valide" alt="Valide"/>
             </li>
             <li>
-              Meetups informatiques <img src="../assets/valide.png"  class="valide"></img>
+              Meetups informatiques <img src="../assets/valide.png" class="valide" alt="Valide"/>
             </li>
             <li>
-              Approfondissement espagnol <img src="../assets/valide.png"  class="valide"></img>
+              Approfondissement espagnol <img src="../assets/valide.png" class="valide" alt="Valide"/>
             </li>
             <li>
-              Cuisinier passioné <img src="../assets/valide.png"  class="valide"></img>
+              Cuisinier passioné <img src="../assets/valide.png" class="valide" alt="Valide"/>
             </li>
           </ul>
           <div class="footer hashtag">Show more</div>
