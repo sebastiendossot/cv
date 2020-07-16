@@ -13,7 +13,7 @@
             <a class="nav-link hover-light active" data-toggle="tab" href="#experiences" role="tab" aria-controls="experiences" aria-selected="true">Expériences</a>
             <a class="nav-link hover-light" data-toggle="tab" href="#formations" role="tab" aria-controls="formations" aria-selected="false">Diplômes</a>
             <a class="nav-link hover-light" data-toggle="tab" href="#projets" role="tab" aria-controls="projets" aria-selected="false">Projets</a>
-            <a class="nav-link-contact" href="#">contact</a>
+            <a class="nav-link-contact" href="mailto:sebastien.dossot@gmail.com">contact</a>
           </nav>
         </div>
         <div class="bottom-left-column row">
