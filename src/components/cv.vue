@@ -106,7 +106,7 @@
                 <div class="position"><img src="../assets/retweet.png" style="width:10px;height:10px;" alt="Retweet"/> &nbsp;&nbsp; {{ item.position }}</div>
                 <div class="company-name">{{ item.company_name }}</div> <div class="city small">{{ item.city }} •</div> <div class="period">{{ item.period }} • {{ item.length }}</div>
                 <div class="description">
-                  <p v-for="description in item.description">{{description}}</p>
+                  <p v-for="description in item.description" v-bind:key="description">{{description}}</p>
                 </div>
                 <div class="button-line">
                   <img v-for="logo in item.logos" v-bind:src="'' + logo +''" v-bind:key="logo" alt="Décrit les compétences"/>

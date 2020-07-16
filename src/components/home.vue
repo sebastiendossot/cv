@@ -15,7 +15,7 @@
           <span>D</span><span>O</span><span>S</span><span>S</span><span>O</span><span>T</span>
         </div>
       </h1>
-      <input type="text" class="search-bar"></input>
+      <input type="text" class="search-bar"/>
       <div class="buttons">
         <router-link class="button left" to="/cv" tag="button">Seb's Search</router-link>
         <button class="button left" data-toggle="modal" data-target="#luckyModal" v-on:click="returnPhoto">I'm feeling lucky</button>
