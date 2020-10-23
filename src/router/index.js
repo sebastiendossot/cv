@@ -8,7 +8,7 @@ import 'es6-promise/auto';
 
 Vue.use(Router);
 
-app.use(createGtm({
+Vue.use(createGtm({
   id: 'GTM-MTFSSFS' , // Your GTM single container ID or array of container ids ['GTM-xxxxxx', 'GTM-yyyyyy']
   debug: true, // Whether or not display console logs debugs (optional)
   vueRouter: Router, // Pass the router instance to automatically sync with router (optional)
