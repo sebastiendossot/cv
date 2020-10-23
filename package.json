@@ -16,7 +16,7 @@
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
     "vue": "^2.5.11",
-    "vue-gtm": "^3.0.0",
+    "vue-gtm": "3.0.0-vue2",
     "vue-router": "^3.0.1"
   },
   "browserslist": [
